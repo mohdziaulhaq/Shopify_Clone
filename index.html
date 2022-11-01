@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            
+            fontFamily: {
+                sans: ["Inter", "sans-serif"]
+            },
+            
+            extend: {
+              colors: {
+                myWhite: "f5f7fa",
+                myGrey: "#eeeeee",
+                mySkyBlue: "#00baf2",
+                myDarkBlue: "0f4a89",
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <section class="header-container">
+        <!-- Navigation -->
+        <nav class="flex text-[#4c4c4c] bg-[#FBF7ED] px-4 sm:px-14 lg:px-16 py-4 lg:py-6 justify-between "> 
+            <!-- Left Nav -->
+            <div class="flex justify-between items-center gap-x-4">
+                <div class="w-[140px]">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Shopify_Logo.png?20150514200511" alt="">
+                </div>
+                
+                <div class="hidden lg:flex">
+                    <ul class="flex gap-x-6">
+                        <li class="hover:text-[#000000]">Start <i class="fa-solid fa-caret-down"></i> </li>
+                        <li class="hover:text-[#000000]">Sell <i class="fa-solid fa-caret-down"></i></li>
+                        <li class="hover:text-[#000000]">Market <i class="fa-solid fa-caret-down"></i></li>
+                        <li class="hover:text-[#000000]">Manage <i class="fa-solid fa-caret-down"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Nav -->
+
+            <div class="hidden lg:flex justify-between items-center gap-x-6">
+
+                <div>
+                    <ul class="flex gap-x-6">
+                        <li class="hover:text-[#000000]" >Pricing</li>
+                        <li class="hover:text-[#000000]">Learn <i class="fa-solid fa-caret-down"></i></li>
+                        <li class="hover:text-[#000000]">Log in</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <button class="text-white bg-[#02715f] px-4 py-2 rounded-md">
+                        Try for free
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="lg:hidden text-[#4c4c4c] mt-1 text-xl">
+                <a class="text-gray-700 font-semibold px-4 " href="#">
+                    Log in
+                </a>
+                <i class=" fa-solid fa-bars "></i>
+            </div>
+        </nav>
+
+        <!-- Hero One -->
+
+        <section class="flex flex-col lg:flex-row lg:justify-between lg:items-center bg-[#FBF7ED] px-4 sm:px-14 lg:px-16 py-4">
+            <!-- Content -->
+            <div class="flex flex-col justify-between gap-y-4 lg:w-[45%]">
+                <h1 class="text-[#004C3F] text-4xl font-bold leading-snug ">The easiest way to sell online in India</h1>
+                <p class="text-[#7f7f7f]">Try one of the most powerful platforms on the market for free. 
+                    No technical knowledge needed.</p>
+
+                    <!-- Email with Button -->
+                <div class="flex flex-col md:flex-row gap-x-4 gap-y-4">
+                    <input class="rounded-md border-gray-400 border-2 border-solid p-3 md:w-3/4 " type="email" name="" id="" placeholder="Enter your email address">
+                    <button class="text-white bg-[#02715f] p-3 rounded-md md:w-1/4">
+                        Try for free
+                    </button>
+                </div>
+                <p class="text-[9px] font-thin">Try Shopify free for 3 days, no credit card required. By 
+                    entering your email, you agree to receive marketing emails from 
+                    Shopify.
+                </p>
+            </div>
+
+            <!-- Image -->
+            <div class=" lg:w-[50%]">
+                <img src="./images/heroone.png" alt="">
+            </div>
+        </section>
+    </section>
+</body>
+</html>
